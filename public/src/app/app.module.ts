@@ -7,6 +7,7 @@ import { AgmCoreModule } from '@agm/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { WeatherComponent } from './weather/weather.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PotdComponent } from './potd/potd.component';
 import { RevolutionsComponent } from './revolutions/revolutions.component';
@@ -15,8 +16,6 @@ import { RevolutionsComponent } from './revolutions/revolutions.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    PotdComponent,
-    RevolutionsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +25,10 @@ import { RevolutionsComponent } from './revolutions/revolutions.component';
     AccordionModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAOaNWe9GEqnyTHbDE2DYsqEM_aUxCUrco'
-    })
+    }),
+    PotdComponent,
+    RevolutionsComponent,
+    WeatherComponent
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
