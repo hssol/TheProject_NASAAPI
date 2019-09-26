@@ -16,6 +16,9 @@ import { RevolutionsComponent } from './revolutions/revolutions.component';
   declarations: [
     AppComponent,
     HomeComponent,
+    PotdComponent,
+    RevolutionsComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
@@ -25,10 +28,7 @@ import { RevolutionsComponent } from './revolutions/revolutions.component';
     AccordionModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAOaNWe9GEqnyTHbDE2DYsqEM_aUxCUrco'
-    }),
-    PotdComponent,
-    RevolutionsComponent,
-    WeatherComponent
+    })
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
