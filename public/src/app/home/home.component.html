@@ -1,1 +1,56 @@
-<p>home works!</p>
+
+<style>
+    .test{
+        width: 30px;
+        height: 30px;
+        background-color:rgb(167, 167, 167);
+        display: inline-block;
+    }
+    .test3{
+        width: 10%;
+        height: 150px;
+        color: #c4c8b7;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .homebody{
+      
+        width: 100%;
+        background-image:linear-gradient(to right, black, rgb(17,31,42),rgb(17,31,42),rgb(17,31,42),rgb(17,31,42),black);
+    }
+    .bodyimg {
+      
+        width: 100%;
+        height: 100%;
+        /* background-image: url(../assets/space.jpg); */
+        background-size:auto;
+        background-repeat: no-repeat;
+        /* margin-left: 160px; */
+        background-position: 0 0;
+    }
+
+</style>
+
+<div class="homebody" >   
+    <div class="bodyimg">
+        <svg width="900px" height="850px" viewBox="-500 -500 1200 1200" style="margin-left: 300px" (click)="dostuff()">
+        <g fill = "#c4c8b7">
+            <path stroke-width ="0.26458332" >
+            <animate id="animation-to-check"  fill="freeze" attributeName="d" dur="5s" 
+            values="M 709.83929,61.142879 120.95217,129.19534 374.82957,685.52993 128.1317,146.49435 -322.5215,559.86295 113.89796,158.66819 -418.49844,-142.19056 97.921486,148.89301 219.53562,-450.41651 102.28123,130.67779 Z;
+            
+            M 709.83929,61.142879 130.77956,-188.30466 374.82957,685.52993 433.12897,57.727866 -322.5215,559.86295 292.56924,421.30747 -418.49844,-142.19056 -96.650854,399.97951 219.53562,-450.41651 -196.64238,23.218491 Z
+            "/>
+            </path>
+        </g>      
+        </svg>
+
+        <div>
+            <div *ngFor = "let project of firsttwentyprojects" class="test3">{{project.title}}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
