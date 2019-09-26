@@ -7,17 +7,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { WeatherComponent } from './weather/weather.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PotdComponent } from './potd/potd.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    WeatherComponent
+    WeatherComponent,
+    PotdComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
