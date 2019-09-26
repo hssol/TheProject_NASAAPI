@@ -1,10 +1,12 @@
 <h1>HELLOOOOOO SUCKERS!</h1>
 
 <div class="container-fluid">  
-    <app-home></app-home>
-
-    <app-potd></app-potd>
-    <app-weather></app-weather>
-    <router-outlet></router-outlet> 
-    
+    <accordion [isAnimated]="true">
+        <accordion-group heading="Cool content to add">
+            <app-potd></app-potd>
+            <app-revolutions></app-revolutions>
+            <app-weather></app-weather>
+          <router-outlet></router-outlet> 
+        </accordion-group>
+    </accordion>   
 </div>
