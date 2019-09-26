@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { WeatherComponent } from './weather/weather.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PotdComponent } from './potd/potd.component';
 
@@ -13,6 +14,7 @@ import { PotdComponent } from './potd/potd.component';
   declarations: [
     AppComponent,
     HomeComponent,
+    WeatherComponent,
     PotdComponent
   ],
   imports: [
