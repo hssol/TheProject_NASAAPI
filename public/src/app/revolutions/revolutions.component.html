@@ -3,14 +3,11 @@
 
     <div>
         <accordion [isAnimated]="true">
-            <accordion-group heading="NASA's Picture of the Day">
-                <h2>{{ApiTitle}}</h2>
-                <h5 class="lead">{{ ApiDate }}</h5>
-                <img [src]="ApiPic" class="img-fluid">
-                <br>
-                {{ApiExplanation}}
+            <accordion-group heading="International Space Station Location">
+                <agm-map [latitude]="lat" [longitude]="lng">
+                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                  </agm-map>            
             </accordion-group>
         </accordion>      
     </div>
     
-

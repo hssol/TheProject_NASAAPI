@@ -1,4 +1,8 @@
 <div class="container-fluid">  
-    <app-potd></app-potd>
-    
+    <accordion [isAnimated]="true">
+        <accordion-group heading="Cool content to add">
+            <app-potd></app-potd>
+            <app-revolutions></app-revolutions>
+        </accordion-group>
+    </accordion>   
 </div>
