@@ -1,0 +1,16 @@
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <div>
+        <accordion [isAnimated]="true">
+            <accordion-group heading="NASA's Picture of the Day">
+                <h2>{{ApiTitle}}</h2>
+                <h5 class="lead">{{ ApiDate }}</h5>
+                <img [src]="ApiPic" class="img-fluid">
+                <br>
+                {{ApiExplanation}}
+            </accordion-group>
+        </accordion>      
+    </div>
+    
+

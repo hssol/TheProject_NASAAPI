@@ -1,0 +1,144 @@
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+        .column {
+           
+            width: 13%;
+            padding: 0 9px;
+            margin-left: 12px;
+          }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+            padding: 16px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.2)
+            
+
+          }
+        .main{
+            background-image:url("assets/img/background.jpg");
+            background-repeat: no-repeat; 
+            background-size: 1400px;
+            height: 620px;
+            padding-left: 25px;
+        }
+
+        h1,h2, h4,h5,h6,p{
+            color:white;
+        }
+        .line{
+            color:darkgray
+
+        }
+        hr{
+            border-top: 1.5px solid lightslategray;
+        }
+
+        body{
+            min-height: 700px;
+            
+        }
+        h3{
+            font-weight: bold;
+            color: white;
+        }
+      
+</style>
+</head>
+
+<body >
+        <accordion [isAnimated]="true">
+    <accordion-group heading="Weather on Mars">
+    <div class="main">
+        <br>
+        <h1 class="display-3">Latest Weather at Elysium Planitia</h1>
+        <br>
+        <h3 class="line">InSight is taking daily weather measurements (temperature, wind, pressure) <br>on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator</h3>
+        <br><br>
+        <div class="row text-center no-gutters">
+            <div class="col-2">
+                    <h3>Sol {{Sol7}}</h3>
+                    <h5>{{Last_UTC7 | date}}</h5>
+            </div>
+            <div class="col-2">
+                    <h5>High: {{Max_mx7}}º F</h5>
+                    <h5>Low: {{Low_mn7}}º F</h5>
+            </div>      
+        </div><br> <br>
+        <div class="row">
+
+            <div class="column">
+                <div class = "card">
+                    <p>Sol {{Sol1}}</p>
+                    <p>{{Last_UTC1 | date}}</p>
+                    <hr>
+                    <p>Low: {{Low_mn1}}º F</p>
+                    <p>High: {{Max_mx1}}º F</p>
+                </div>
+            </div>  
+        
+            <div class="column">
+                <div class = "card">
+                    <p>Sol {{Sol2}}</p>
+                    <p>{{Last_UTC2 | date}}</p>
+                    <hr>
+                    <p>Low: {{Low_mn2}}º F</p>
+                    <p>High: {{Max_mx2}}º F</p>
+                </div>
+            </div>    
+            <div class="column">
+                <div class = "card">
+                    <p>Sol {{Sol3}}</p>
+                    <p>{{Last_UTC3 | date}}</p>
+                    <hr>
+                    <p>Low: {{Low_mn3}}º F</p>
+                    <p>High: {{Max_mx3}}º F</p>
+                </div>
+            </div>    
+            <div class="column">
+                <div class = "card">
+                    <p>Sol {{Sol4}}</p>
+                    <p>{{Last_UTC4 | date}}</p>
+                    <hr>
+                    <p>Low: {{Low_mn4}}º F</p>
+                    <p>High: {{Max_mx4}}º F</p>
+                </div>
+            </div>    
+            <div class="column">
+                <div class = "card">
+                    <p>Sol {{Sol5}}</p>
+                    <p>{{Last_UTC5 | date}}</p>
+                    <hr>
+                    <p>Low: {{Low_mn5}}º F</p>
+                    <p>High: {{Max_mx5}}º F</p>
+                </div>
+            </div> 
+        
+            <div class="column">
+                <div class = "card">
+                    <p>Sol {{Sol6}}</p>
+                    <p>{{Last_UTC6 | date}}</p>
+                    <hr>
+                    <p>Low: {{Low_mn6}}º F</p>
+                    <p>High: {{Max_mx6}}º F</p>
+                </div>
+            </div>    
+        
+            <div class="column">
+                <div class = "card">
+                    <p>Sol {{Sol7}}</p>
+                    <p>{{Last_UTC7 | date}}</p>
+                    <hr>
+                    <p>Low: {{Low_mn7}}º F</p>
+                    <p>High: {{Max_mx7}}º F</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    </accordion-group>
+    </accordion>
+
+
+
+
+</body>
